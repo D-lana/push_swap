@@ -6,7 +6,7 @@
 /*   By: dlana <dlana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 20:19:08 by dlana             #+#    #+#             */
-/*   Updated: 2021/10/02 20:29:25 by dlana            ###   ########.fr       */
+/*   Updated: 2021/10/02 14:12:48 by dlana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ int	main(int argv, char **argc)
 	ft_parser(&points, argc, i + 1);
 	ft_create_empty_list(&points);
 	ft_sort_array(&points);
-	// if (points.count_a >= 2 && points.count_a <= 5 && points.need_sort == 1)
-	// 	ft_sort_short_list(&points);
-	if (points.need_sort == 1) //points.count_a >= 6 &&
+	if (points.count_a >= 2 && points.count_a <= 5 && points.need_sort == 1)
+		ft_sort_short_list(&points);
+	if (points.count_a >= 6 && points.need_sort == 1)
 		ft_sort_long_list(&points);
 	exit(EXIT_SUCCESS);
 }

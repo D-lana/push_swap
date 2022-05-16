@@ -6,7 +6,7 @@
 /*   By: dlana <dlana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 20:24:31 by dlana             #+#    #+#             */
-/*   Updated: 2021/10/02 20:30:39 by dlana            ###   ########.fr       */
+/*   Updated: 2021/09/29 21:03:37 by dlana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,13 +53,13 @@ static int	ft_init_i(t_point *points)
 {
 	int	i;
 
-	i = 2;
+	i = 0;
 	if (points->count_a > 5 && points->count_a <= 50)
 		i = 5;
-	if (points->count_a > 50 && points->count_a <= 150)
+	if (points->count_a > 50 && points->count_a <= 100)
 		i = 10;
-	if (points->count_a > 150 && points->count_a <= 500)
-		i = 35;
+	if (points->count_a > 100 && points->count_a <= 500)
+		i = 30;
 	if (points->count_a > 500)
 		i = 35;
 	return (i);
